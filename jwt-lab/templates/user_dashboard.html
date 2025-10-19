@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.title}}</title>
+    <link rel="icon" type="image/png" href="/static/favicon.png">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>SICOSMOS</h2>
+                <span class="nav-subtitle">Sistem Informasi Cosmos</span>
+            </div>
+            <div class="nav-user">
+                <span>Welcome, {{.user.Username}}</span>
+                <button onclick="logout()" class="btn btn-secondary">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="dashboard">
+            <h1>User Dashboard</h1>
+            <div class="dashboard-content">
+                <div class="card">
+                    <h3>Account Information</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <label>Username:</label>
+                            <span>{{.user.Username}}</span>
+                        </div>
+                        <div class="info-item">
+                            <label>Account Type:</label>
+                            <span>Standard User</span>
+                        </div>
+                        <div class="info-item">
+                            <label>Status:</label>
+                            <span>Active</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Available Features</h3>
+                    <ul class="feature-list">
+                        <li>View Profile</li>
+                        <li>Change Password</li>
+                    </ul>
+                </div>
+
+                <div class="card notice">
+                    <p>This is a basic user dashboard with limited functionality. Admin users have access to comprehensive system management tools.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/dashboard.js"></script>
+</body>
+</html>

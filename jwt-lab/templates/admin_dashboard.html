@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.title}}</title>
+    <link rel="icon" type="image/png" href="/static/favicon.png">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>SICOSMOS</h2>
+                <span class="nav-subtitle">Sistem Informasi Cosmos</span>
+            </div>
+            <div class="nav-user">
+                <span>Welcome, {{.user.Username}} <span class="admin-badge">ADMIN</span></span>
+                <button onclick="logout()" class="btn btn-secondary">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="dashboard admin">
+            <h1>Admin Dashboard</h1>
+            <p class="dashboard-subtitle">Comprehensive System Management Interface</p>
+
+            <!-- System Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h4>Total Users</h4>
+                    <p class="stat-number" id="totalUsers">0</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Active Sessions</h4>
+                    <p class="stat-number">142</p>
+                </div>
+                <div class="stat-card">
+                    <h4>System Load</h4>
+                    <p class="stat-number">67%</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Memory Usage</h4>
+                    <p class="stat-number">45%</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Network Traffic</h4>
+                    <p class="stat-number">847 GB</p>
+                </div>
+            </div>
+
+            <!-- System Modules -->
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>System Modules</h3>
+                    <div class="module-list">
+                        <div class="module-item">
+                            <div class="module-info">
+                                <span class="module-name">User Management</span>
+                                <span class="module-detail">142 users</span>
+                            </div>
+                            <span class="status active">Active</span>
+                        </div>
+                        <div class="module-item">
+                            <div class="module-info">
+                                <span class="module-name">System Monitoring</span>
+                                <span class="module-detail">1,250 metrics</span>
+                            </div>
+                            <span class="status active">Active</span>
+                        </div>
+                        <div class="module-item">
+                            <div class="module-info">
+                                <span class="module-name">Security Audit</span>
+                                <span class="module-detail">7 alerts</span>
+                            </div>
+                            <span class="status active">Active</span>
+                        </div>
+                        <div class="module-item">
+                            <div class="module-info">
+                                <span class="module-name">Database Administration</span>
+                                <span class="module-detail">8,472 queries</span>
+                            </div>
+                            <span class="status active">Active</span>
+                        </div>
+                        <div class="module-item">
+                            <div class="module-info">
+                                <span class="module-name">Network Configuration</span>
+                                <span class="module-detail">23 devices</span>
+                            </div>
+                            <span class="status active">Active</span>
+                        </div>
+                        <div class="module-item">
+                            <div class="module-info">
+                                <span class="module-name">Backup Management</span>
+                                <span class="module-detail">142 backups</span>
+                            </div>
+                            <span class="status active">Active</span>
+                        </div>
+                        <div class="module-item">
+                            <div class="module-info">
+                                <span class="module-name">Performance Analytics</span>
+                                <span class="module-detail">89 reports</span>
+                            </div>
+                            <span class="status active">Active</span>
+                        </div>
+                        <div class="module-item">
+                            <div class="module-info">
+                                <span class="module-name">Access Control</span>
+                                <span class="module-detail">34 policies</span>
+                            </div>
+                            <span class="status active">Active</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Admin Tools -->
+                <div class="card">
+                    <h3>Admin Tools</h3>
+                    <div class="tools-grid">
+                        <button class="tool-btn">User Account Management</button>
+                        <button class="tool-btn">System Configuration</button>
+                        <button class="tool-btn">Security Policy Editor</button>
+                        <button class="tool-btn">Database Query Tool</button>
+                        <button class="tool-btn">Log File Analyzer</button>
+                        <button class="tool-btn">Performance Monitor</button>
+                        <button class="tool-btn">Backup Scheduler</button>
+                        <button class="tool-btn">Network Diagnostics</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="card">
+                <h3>Recent System Activity</h3>
+                <div class="activity-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>User</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>System Backup</td>
+                                <td>system</td>
+                                <td class="time">Just now</td>
+                            </tr>
+                            <tr>
+                                <td>Security Scan</td>
+                                <td>security_bot</td>
+                                <td class="time">2 min ago</td>
+                            </tr>
+                            <tr>
+                                <td>User Login</td>
+                                <td>{{.user.Username}}</td>
+                                <td class="time">5 min ago</td>
+                            </tr>
+                            <tr>
+                                <td>Database Update</td>
+                                <td>admin</td>
+                                <td class="time">15 min ago</td>
+                            </tr>
+                            <tr>
+                                <td>Config Change</td>
+                                <td>system</td>
+                                <td class="time">1 hour ago</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card notice">
+                <p><strong>Security Notice:</strong> This dashboard contains sensitive system information. Ensure all administrative actions are authorized and logged.</p>
+            </div>
+        </div>
+    </div>
+    <script src="/static/dashboard.js"></script>
+</body>
+</html>

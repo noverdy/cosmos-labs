@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# URL rewriting for clean URLs (optional)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^dashboard/?$ dashboard.php [L,QSA]
+
+# Security headers
+Header always set X-Content-Type-Options nosniff
+Header always set X-Frame-Options SAMEORIGIN
+Header always set X-XSS-Protection "1; mode=block"
+
+# Disable server signature
+ServerSignature Off
+
+# Prevent directory listing
+Options -Indexes

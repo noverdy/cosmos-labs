@@ -1,0 +1,119 @@
+<!-- Hero Section -->
+<section class="bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-2xl p-12 mb-12">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-5xl font-bold mb-6">Welcome to CosmosCorp</h2>
+        <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            Enterprise technology solutions powering the next generation of digital transformation.
+            Partner with industry leaders who understand your business needs.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="?page=contact" class="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition font-semibold">
+                Schedule Consultation
+            </a>
+            <a href="?page=services" class="bg-blue-500 text-white px-8 py-4 rounded-lg hover:bg-blue-400 transition font-semibold">
+                Explore Solutions
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+    <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+        <div class="text-3xl font-bold text-blue-600 mb-2">500+</div>
+        <div class="text-gray-600">Enterprise Clients</div>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+        <div class="text-3xl font-bold text-green-600 mb-2">15+</div>
+        <div class="text-gray-600">Years Experience</div>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+        <div class="text-3xl font-bold text-purple-600 mb-2">99.9%</div>
+        <div class="text-gray-600">Uptime SLA</div>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+        <div class="text-3xl font-bold text-orange-600 mb-2">24/7</div>
+        <div class="text-gray-600">Support Available</div>
+    </div>
+</section>
+
+<!-- Value Proposition -->
+<section class="grid md:grid-cols-2 gap-8 mb-12">
+    <div class="bg-white rounded-xl shadow-lg p-8">
+        <h3 class="text-3xl font-bold text-gray-900 mb-6">Transform Your Business</h3>
+        <p class="text-gray-600 mb-6">
+            CosmosCorp delivers cutting-edge enterprise solutions that drive measurable business results.
+            Our expert team combines technical excellence with deep industry knowledge to deliver solutions
+            that scale with your growth.
+        </p>
+        <ul class="space-y-4 mb-8">
+            <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-xl"></i>
+                <div>
+                    <h4 class="font-semibold text-gray-900">Cloud-First Architecture</h4>
+                    <p class="text-gray-600 text-sm">Scalable solutions built on modern cloud infrastructure</p>
+                </div>
+            </li>
+            <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-xl"></i>
+                <div>
+                    <h4 class="font-semibold text-gray-900">Enterprise Security</h4>
+                    <p class="text-gray-600 text-sm">Bank-grade security protecting your critical assets</p>
+                </div>
+            </li>
+            <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-xl"></i>
+                <div>
+                    <h4 class="font-semibold text-gray-900">24/7 Premium Support</h4>
+                    <p class="text-gray-600 text-sm">Round-the-clock technical assistance from expert engineers</p>
+                </div>
+            </li>
+        </ul>
+        <a href="?page=about" class="text-blue-600 hover:text-blue-700 font-semibold">
+            Learn more about our approach →
+        </a>
+    </div>
+
+    <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-8">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">Why Industry Leaders Choose CosmosCorp</h3>
+        <div class="space-y-4">
+            <div class="bg-white rounded-lg p-4 shadow-sm">
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-rocket text-blue-600 mr-3"></i>
+                    <h4 class="font-semibold">Rapid Deployment</h4>
+                </div>
+                <p class="text-gray-600 text-sm">Go from concept to production in weeks, not months</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 shadow-sm">
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-shield-alt text-green-600 mr-3"></i>
+                    <h4 class="font-semibold">Compliance Ready</h4>
+                </div>
+                <p class="text-gray-600 text-sm">SOC 2, ISO 27001, and industry regulation compliant</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 shadow-sm">
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-chart-line text-purple-600 mr-3"></i>
+                    <h4 class="font-semibold">Proven ROI</h4>
+                </div>
+                <p class="text-gray-600 text-sm">Average 300% ROI within first year of implementation</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl p-8 text-center">
+    <h3 class="text-3xl font-bold mb-4">Ready to Accelerate Your Digital Journey?</h3>
+    <p class="text-blue-100 mb-6 max-w-2xl mx-auto">
+        Join hundreds of enterprises that trust CosmosCorp for their mission-critical technology needs.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="?page=contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition font-semibold">
+            Get Free Consultation
+        </a>
+        <a href="?page=services" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-400 transition font-semibold">
+            View Our Services
+        </a>
+    </div>
+</section>

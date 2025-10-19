@@ -1,0 +1,138 @@
+services:
+  dashboard:
+    build:
+      context: ./lab-dashboard
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    container_name: lab-dashboard
+    volumes:
+      - ./lab-dashboard:/var/www/html
+    restart: unless-stopped
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+
+  lfi:
+    build:
+      context: ./lfi-lab
+      dockerfile: Dockerfile
+    ports:
+      - "8081:80"
+    container_name: lfi-lab
+    volumes:
+      - ./lfi-lab/src:/var/www/html
+    restart: unless-stopped
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+
+  xss:
+    build:
+      context: ./xss-lab
+      dockerfile: Dockerfile
+    ports:
+      - "8082:80"
+    container_name: xss-lab
+    volumes:
+      - ./xss-lab/src:/var/www/html
+    restart: unless-stopped
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+    depends_on:
+      - xss-db
+    networks:
+      - xss-network
+
+  xss-db:
+    image: mysql:8.0
+    container_name: xss-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: news_app
+      MYSQL_USER: newsuser
+      MYSQL_PASSWORD: newspass
+    volumes:
+      - xss-db-data:/var/lib/mysql
+      - ./xss-lab/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - xss-network
+
+  sqli:
+    build:
+      context: ./sqli-lab
+      dockerfile: Dockerfile
+    ports:
+      - "8083:80"
+    container_name: sqli-lab
+    volumes:
+      - ./sqli-lab/src:/var/www/html
+    restart: unless-stopped
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+    depends_on:
+      - sqli-db
+    networks:
+      - sqli-network
+
+  sqli-db:
+    image: mysql:8.0
+    container_name: sqli-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: cosmos_apps
+      MYSQL_USER: cosmosuser
+      MYSQL_PASSWORD: cosmospass
+    volumes:
+      - sqli-db-data:/var/lib/mysql
+      - ./sqli-lab/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - sqli-network
+
+  jwt:
+    build:
+      context: ./jwt-lab
+      dockerfile: Dockerfile
+    ports:
+      - "8084:8080"
+    container_name: jwt-lab
+    restart: unless-stopped
+    environment:
+      - DB_HOST=jwt-db
+      - DB_PORT=3306
+      - DB_NAME=sicosmos_db
+      - DB_USER=jwtuser
+      - DB_PASSWORD=jwtpass
+    depends_on:
+      - jwt-db
+    networks:
+      - jwt-network
+
+  jwt-db:
+    image: mysql:8.0
+    container_name: jwt-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: sicosmos_db
+      MYSQL_USER: jwtuser
+      MYSQL_PASSWORD: jwtpass
+    volumes:
+      - jwt-db-data:/var/lib/mysql
+      - ./jwt-lab/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - jwt-network
+
+
+volumes:
+  xss-db-data:
+  sqli-db-data:
+  jwt-db-data:
+
+networks:
+  xss-network:
+    driver: bridge
+  sqli-network:
+    driver: bridge
+  jwt-network:
+    driver: bridge

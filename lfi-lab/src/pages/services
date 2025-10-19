@@ -1,0 +1,134 @@
+<!-- Services Header -->
+<div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl p-8 mb-8">
+    <h2 class="text-4xl font-bold mb-4">Enterprise Solutions</h2>
+    <p class="text-blue-100 text-lg max-w-3xl">
+        Comprehensive technology services designed to accelerate your digital transformation journey.
+        From strategy to execution, we deliver end-to-end solutions that drive business value.
+    </p>
+</div>
+
+<!-- Core Services Grid -->
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-cloud text-blue-600 text-xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Cloud Solutions</h3>
+        <p class="text-gray-600 mb-4">Enterprise-grade cloud architecture, migration, and optimization on AWS, Azure, and Google Cloud.</p>
+        <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Cloud migration strategy</li>
+            <li>• Multi-cloud management</li>
+            <li>• Cost optimization</li>
+        </ul>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-shield-alt text-green-600 text-xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Security Services</h3>
+        <p class="text-gray-600 mb-4">Comprehensive cybersecurity solutions protecting your digital assets and ensuring compliance.</p>
+        <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Security assessments</li>
+            <li>• Incident response</li>
+            <li>• Compliance management</li>
+        </ul>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-code text-purple-600 text-xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Enterprise Software</h3>
+        <p class="text-gray-600 mb-4">Custom software development tailored to your unique business requirements and challenges.</p>
+        <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Custom application development</li>
+            <li>• System integration</li>
+            <li>• API development</li>
+        </ul>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-chart-line text-orange-600 text-xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Data & Analytics</h3>
+        <p class="text-gray-600 mb-4">Transform your data into actionable insights with advanced analytics and BI solutions.</p>
+        <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Data warehousing</li>
+            <li>• Business intelligence</li>
+            <li>• Predictive analytics</li>
+        </ul>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-users text-red-600 text-xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">IT Consulting</h3>
+        <p class="text-gray-600 mb-4">Strategic technology consulting to align IT initiatives with business objectives.</p>
+        <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Digital transformation</li>
+            <li>• Technology roadmapping</li>
+            <li>• Process optimization</li>
+        </ul>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+        <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-cogs text-indigo-600 text-xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">DevOps & Automation</h3>
+        <p class="text-gray-600 mb-4">Accelerate delivery and improve reliability with modern DevOps practices and automation.</p>
+        <ul class="text-sm text-gray-500 space-y-1">
+            <li>• CI/CD pipelines</li>
+            <li>• Infrastructure as code</li>
+            <li>• Monitoring & observability</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Process Section -->
+<div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+    <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Engagement Process</h3>
+    <div class="grid md:grid-cols-4 gap-6">
+        <div class="text-center">
+            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <span class="text-blue-600 font-bold text-xl">1</span>
+            </div>
+            <h4 class="font-semibold text-gray-900 mb-2">Discovery</h4>
+            <p class="text-gray-600 text-sm">Understanding your challenges and objectives</p>
+        </div>
+        <div class="text-center">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <span class="text-green-600 font-bold text-xl">2</span>
+            </div>
+            <h4 class="font-semibold text-gray-900 mb-2">Strategy</h4>
+            <p class="text-gray-600 text-sm">Developing tailored solutions and roadmaps</p>
+        </div>
+        <div class="text-center">
+            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <span class="text-purple-600 font-bold text-xl">3</span>
+            </div>
+            <h4 class="font-semibold text-gray-900 mb-2">Implementation</h4>
+            <p class="text-gray-600 text-sm">Executing with agile methodologies</p>
+        </div>
+        <div class="text-center">
+            <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <span class="text-orange-600 font-bold text-xl">4</span>
+            </div>
+            <h4 class="font-semibold text-gray-900 mb-2">Support</h4>
+            <p class="text-gray-600 text-sm">Continuous improvement and optimization</p>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action -->
+<div class="text-center">
+    <a href="?page=contact" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition font-semibold text-lg">
+        Schedule a Consultation
+    </a>
+    <p class="text-gray-600 mt-4">
+        <a href="?page=home" class="text-blue-600 hover:text-blue-700">← Back to Home</a>
+    </p>
+</div>

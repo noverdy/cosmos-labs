@@ -1,0 +1,142 @@
+<!-- About Header -->
+<div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl p-8 mb-8">
+    <h2 class="text-4xl font-bold mb-4">About CosmosCorp</h2>
+    <p class="text-blue-100 text-lg max-w-3xl">
+        Pioneering enterprise technology solutions since 2009. We transform complex challenges into competitive advantages
+        for forward-thinking organizations worldwide.
+    </p>
+</div>
+
+<!-- Company Story -->
+<div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+    <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Story</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+        <div>
+            <p class="text-gray-600 mb-4">
+                Founded in 2009, CosmosCorp emerged from a simple vision: to bridge the gap between cutting-edge technology
+                and practical business applications. What started as a small team of passionate engineers has grown into
+                a global enterprise trusted by Fortune 500 companies and innovative startups alike.
+            </p>
+            <p class="text-gray-600 mb-4">
+                Today, we employ over 500 technology professionals across 12 countries, delivering solutions that
+                power critical infrastructure, drive digital transformation, and enable our clients to thrive in an
+                increasingly competitive landscape.
+            </p>
+        </div>
+        <div class="space-y-4">
+            <div class="bg-blue-50 rounded-lg p-4">
+                <div class="text-2xl font-bold text-blue-600 mb-1">15+</div>
+                <div class="text-gray-600">Years of Innovation</div>
+            </div>
+            <div class="bg-green-50 rounded-lg p-4">
+                <div class="text-2xl font-bold text-green-600 mb-1">500+</div>
+                <div class="text-gray-600">Technology Experts</div>
+            </div>
+            <div class="bg-purple-50 rounded-lg p-4">
+                <div class="text-2xl font-bold text-purple-600 mb-1">12</div>
+                <div class="text-gray-600">Countries Served</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mission and Values -->
+<div class="grid md:grid-cols-2 gap-8 mb-8">
+    <div class="bg-white rounded-xl shadow-lg p-8">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Mission</h3>
+        <p class="text-gray-600 mb-6">
+            To empower businesses with transformative technology solutions that drive growth, innovation, and sustainable
+            competitive advantage in an increasingly digital world.
+        </p>
+        <div class="space-y-4">
+            <div class="flex items-start">
+                <i class="fas fa-bullseye text-blue-600 mt-1 mr-3"></i>
+                <div>
+                    <h4 class="font-semibold text-gray-900">Strategic Impact</h4>
+                    <p class="text-gray-600 text-sm">Delivering measurable business outcomes that matter</p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <i class="fas fa-rocket text-purple-600 mt-1 mr-3"></i>
+                <div>
+                    <h4 class="font-semibold text-gray-900">Innovation First</h4>
+                    <p class="text-gray-600 text-sm">Continuously pushing boundaries of what's possible</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-8">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Values</h3>
+        <div class="space-y-4">
+            <div class="flex items-start">
+                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <i class="fas fa-lightbulb text-blue-600"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900">Innovation Excellence</h4>
+                    <p class="text-gray-600 text-sm">Embracing cutting-edge technology and creative problem-solving</p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <i class="fas fa-handshake text-green-600"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900">Client Partnership</h4>
+                    <p class="text-gray-600 text-sm">Your success is our success - we're in this together</p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <i class="fas fa-shield-alt text-purple-600"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900">Integrity & Trust</h4>
+                    <p class="text-gray-600 text-sm">Building lasting relationships through transparency and reliability</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Leadership Team Preview -->
+<div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+    <h3 class="text-2xl font-bold text-gray-900 mb-6">Leadership Team</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+        <div class="text-center">
+            <div class="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span class="text-white text-2xl font-bold">JD</span>
+            </div>
+            <h4 class="font-semibold text-gray-900">John Davidson</h4>
+            <p class="text-gray-600 text-sm mb-2">Chief Executive Officer</p>
+            <p class="text-gray-500 text-xs">20+ years in enterprise technology</p>
+        </div>
+        <div class="text-center">
+            <div class="w-24 h-24 bg-gradient-to-br from-green-500 to-green-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span class="text-white text-2xl font-bold">SC</span>
+            </div>
+            <h4 class="font-semibold text-gray-900">Sarah Chen</h4>
+            <p class="text-gray-600 text-sm mb-2">Chief Technology Officer</p>
+            <p class="text-gray-500 text-xs">Former cloud architect at major tech companies</p>
+        </div>
+        <div class="text-center">
+            <div class="w-24 h-24 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span class="text-white text-2xl font-bold">MR</span>
+            </div>
+            <h4 class="font-semibold text-gray-900">Michael Rodriguez</h4>
+            <p class="text-gray-600 text-sm mb-2">Chief Operating Officer</p>
+            <p class="text-gray-500 text-xs">Expert in scaling global operations</p>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action -->
+<div class="text-center">
+    <a href="?page=contact" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition font-semibold text-lg">
+        Meet Our Team
+    </a>
+    <p class="text-gray-600 mt-4">
+        <a href="?page=home" class="text-blue-600 hover:text-blue-700">← Back to Home</a>
+    </p>
+</div>
