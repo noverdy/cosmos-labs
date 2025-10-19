@@ -8,26 +8,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
     $password = $_POST['password'] ?? '';
 
     if (!empty($username) && !empty($password)) {
-        $query = "SELECT * FROM users WHERE username = '$username'";
+        $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
         $result = $conn->query($query);
 
         if ($result && $result->num_rows > 0) {
             $user = $result->fetch_assoc();
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['username'] = $user['username'];
+            $_SESSION['role'] = $user['role'];
 
-            if (password_verify($password, $user['password'])) {
-                $_SESSION['user_id'] = $user['id'];
-                $_SESSION['username'] = $user['username'];
-                $_SESSION['role'] = $user['role'];
+            $ip = $_SERVER['REMOTE_ADDR'];
+            $log_query = "INSERT INTO audit_log (user_id, action, description, ip_address) VALUES
+                         ({$user['id']}, 'LOGIN', 'User logged in successfully', '$ip')";
+            $conn->query($log_query);
 
-                $ip = $_SERVER['REMOTE_ADDR'];
-                $log_query = "INSERT INTO audit_log (user_id, action, description, ip_address) VALUES
-                             ({$user['id']}, 'LOGIN', 'User logged in successfully', '$ip')";
-                $conn->query($log_query);
-
-                redirect('dashboard.php');
-            } else {
-                $error = 'Invalid username or password';
-            }
+            redirect('dashboard.php');
         } else {
             $error = 'Invalid username or password';
 

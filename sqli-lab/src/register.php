@@ -31,11 +31,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['register'])) {
         if ($result->num_rows > 0) {
             $error = 'Username already exists';
         } else {
-            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
             $insert_query = "INSERT INTO users (username, password, full_name, email, role) VALUES (?, ?, ?, ?, 'student')";
             $stmt = $conn->prepare($insert_query);
-            $stmt->bind_param("ssss", $username, $hashed_password, $full_name, $email);
+            $stmt->bind_param("ssss", $username, $password, $full_name, $email);
 
             if ($stmt->execute()) {
                 $success = 'Registration successful! You can now login with your credentials.';
